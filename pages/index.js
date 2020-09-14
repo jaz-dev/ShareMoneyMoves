@@ -23,7 +23,8 @@ export async function getStaticProps(context) {
 export default function Home({posts}) {
   const [modalShow, setModalShow] = React.useState(false);
   //<Poll heading="Who's the GOAT?" desc="who, in your opinion, is the best basketball player of all time?" choices={["MJ","Kobe","LeBron"]} />
-  
+  console.log(posts.posts)
+  console.log("Hi")
   return (
     <>
       <Head>
