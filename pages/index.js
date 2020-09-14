@@ -22,9 +22,6 @@ export async function getServerSideProps(context) {
 }
 export default function Home({posts}) {
   const [modalShow, setModalShow] = React.useState(false);
-  //<Poll heading="Who's the GOAT?" desc="who, in your opinion, is the best basketball player of all time?" choices={["MJ","Kobe","LeBron"]} />
-  console.log(posts.posts)
-  console.log("Hi")
   return (
     <>
       <Head>
@@ -55,7 +52,7 @@ export default function Home({posts}) {
         {
           posts.posts.map(
             p => (
-              <div key={p.date}><Post date={p.date} percent={p.percent} amount={p.amount} title={p.title} explanation={p.explanation} type={p.type}/><br/><br/></div>
+              <div key={p.date}><Post date={p.date} percent={p.percent} amount={p.amount} title={p.title} explanation={p.explanation} type={p.type}/><br/></div>
             )
           )
         }
