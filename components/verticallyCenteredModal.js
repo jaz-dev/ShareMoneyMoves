@@ -29,7 +29,7 @@ export default function VerticallyCenteredModal(props) {
       referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
        // body data type must match "Content-Type" header
     });
-    window.location.reload(false);
+    window.location.reload(true);
     console.log(response)
     console.log(data)
     
