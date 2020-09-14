@@ -14,9 +14,9 @@ export default function GLPage() {
       />
     </Head>
 		<div style={{"backgroundColor": 'silver', "height": "100vh"}}>
-			<h1 style={{marginLeft: "5px"}}>Site Guidlines</h1>
+			<h1 style={{marginLeft: "5px"}}>Site Guidelines</h1>
 			<ol>
-			  <li>Be honest with your posts</li>
+			  <li>Be honest in your posts</li>
 			  <li>Use appropriate langauge</li>
 			  <li>Have fun!</li>
 			</ol>
