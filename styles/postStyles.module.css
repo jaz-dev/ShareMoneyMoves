@@ -1,0 +1,55 @@
+.container{
+	width:85%;
+	display: grid;
+	background-color: whitesmoke;
+  	border-style: solid;
+  	border-color: black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-rows: 4.5fr 1fr;
+	margin: auto;
+	grid-template-areas: 
+	"percent number info"
+	"date date info";
+}
+
+.percentBox{
+	grid-area:percent;
+	border-style: solid;
+  	border-color: black;
+  	display: flex;
+  	align-items: center;
+  	border-right:none;
+  	border-bottom: none;
+  	justify-content: center;
+
+}
+
+.numberBox{
+	grid-area:number;
+	border-style: solid;
+  	border-color: black;
+  	display: flex;
+  	align-items: center;
+  	border-right:none;
+  	border-bottom: none;
+  	justify-content: center;
+}
+
+.infoBox{
+	grid-area:info;
+	border-style: solid;
+  	border-color: black;
+
+}
+
+.dateBox{
+	grid-area:date;
+	border-style: solid;
+  	border-color: black;
+  	display: flex;
+  	border-right:none;
+  	align-items: center;
+  	justify-content: center;
+
+}

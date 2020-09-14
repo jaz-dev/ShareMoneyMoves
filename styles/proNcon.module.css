@@ -1,0 +1,77 @@
+.container {
+  font-size: 20px;
+  width: 90%;
+  background: LightGray;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "header header"
+  "proheader conheader"
+  "submitvote submitvote"
+  "addpro addcon"
+  "pros cons";
+  margin: auto;
+
+}
+
+.prosColumn{
+  overflow-y: auto;
+  grid-area: pros;
+  min-height: 500px;
+}
+
+.consColumn{
+  overflow-y: auto;
+  grid-area: cons;
+  min-height: 500px;
+}
+
+.header{
+  grid-area: header;
+  border-style: inset;
+}
+
+.proHeader{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  grid-area: proheader;
+  background: rgb(128, 170, 255);
+  margin: 0;
+}
+
+.conHeader{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  grid-area: conheader;
+  background: rgb(255, 128, 128);
+  margin: 0;
+}
+
+.submitVote{
+  grid-area: submitvote;
+  margin-bottom: 8px;
+}
+
+.proComment {
+  height: 50px;
+  background: rgb(128, 170, 255);
+  border-style: inset;
+  margin: 0;
+}
+
+.conComment{
+  height: 50px;
+  background: rgb(255, 128, 128);
+  border-style: inset;
+  margin: 0;
+}
+
+.proAddButton{
+  grid-area: addpro;
+}
+
+.conAddButton{
+  grid-area: addcon;
+}
