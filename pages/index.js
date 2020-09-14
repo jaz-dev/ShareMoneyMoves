@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button'
 import Post from '../components/post'
 import fetch from 'isomorphic-unfetch'
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
     // Call an external API endpoint to get posts.
   // You can use any data fetching library
   const res = await fetch("https://profilesfetch.vercel.app/api/profiles/newIndex")
