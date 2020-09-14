@@ -36,7 +36,7 @@ export default function Home({posts}) {
           crossorigin="anonymous"
         />
       </Head>
-      <div style={{"backgroundColor": 'silver', "height": "100vh"}}>
+      <div style={{"backgroundColor": 'silver', "minHeight": "100vh"}}>
       <section>
         <center>
           <h1>Share<span style={{"color": 'green'}}>Money</span><span style={{"color": 'red'}}>Moves</span></h1>
