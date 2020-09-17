@@ -56,7 +56,7 @@ export default function VerticallyCenteredModal(props) {
           <label htmlFor="title">What was traded? (i.e. AAPL, Tesla puts, etc.)</label>
           <input id="title" name="title" ref={register({ required: true })}/><br/>
           <label htmlFor="explanation">What did you do and/or any advice?</label>
-          <textarea className="form-control" name="explanation" rows="5" id="explanation" ref={register({ required: true })}></textarea><br/>
+          <textarea className="form-control" name="explanation" rows="2" id="explanation" maxlength="150" ref={register({ required: true })}></textarea><br/>
           {errors.name && errors.name.type === "required" && <span>This is required</span>}
           <input type="submit"></input>
         </form>
